@@ -10,23 +10,27 @@ import InfiniteScroll from 'react-infinite-scroll-component'
 
 //Style
 const GlobalStyle = createGlobalStyle`
-  ={
+  * {
     margin:0;
     padding: 0;
     box-sizing: border-box;
   }
-
   body{
-    font-family: sans-serif
+    font-family: sans-serif;
   }
 `
 const WrapperImage = styled.section`
-  max-width: 70rem
-  margin: 4rem auto
-  display: grid
-  grid-gap: 1em
-  grid-template-columns: repreat(auto-fit,minmax(250px,1fr))
-  grid-auto-rows:300px
+  max-width: 70rem;
+  margin: 4rem auto;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-auto-rows:auto;
+`
+const Img = styled.img`
+  width: 250px;
+  height: 250px;
+  height:auto
 `
 
 function App() {
